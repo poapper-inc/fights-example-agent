@@ -1,0 +1,11 @@
+# env specifies the fights environment the agents support.
+env: puoribor
+
+# agents specifies the agents in the project.
+agents:
+  - name: random_agent # name of agent
+    path: agent/random_agent.py # path to agent .py file, must expose class Agent
+                                # that subclasses fights.base.BaseAgent
+
+# ignore specifies files to be ignored in the project when being archived for execution.
+ignore: ["*.md", "LICENSE.txt"]
